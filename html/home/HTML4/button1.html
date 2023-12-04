@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Программа на Python, Часть 1</title>
+    <meta charset="UTF-8">
+    <style>
+        .python-logo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://stigmat19.github.io/scsite/static/media/Icon-Python.7bb116a5.png" alt="Логотип Python" title="Python - высокоуровневый язык программирования общего назначения" class="python-logo">
+    <h1>HOW-TO: Программа на Python, Часть 1</h1>
+    <ul><li><i><a href="./button1.html">Программа на Python — часть 1 </a></i></li>
+    <li><i><a href="./button2.html">Программа на Python — часть 2 </a></i></li>
+    <li><i><a href="./button3.html">Программа на Python — часть 3 </a></i></li>
+    </ul>
+
+    <h2 id="first">Содержание</h2>
+    <h3>HOW-TO: Программа на Python, Часть 1</h3>
+    <ul>
+        <li><a href="#first-program"> Наша первая программа </a></li>
+        <li><a href="#for-loop-example">Пример цикла For </a></li>
+    </ul>
+    <p>Из множества существующих языков программирования Python — один из самых лёгких
+в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+создание консольных приложений, а в следующей — программирование графических
+интерфейсов (GUI). Давайте создадим простую программу прямо сейчас.</p>
+
+    <h2 id="first-program">Наша первая программа </h2>
+    <a href="#first">К содержанию</a>
+    <p>Наберём код в текстовом редакторе (например, в <strong>gedit</strong>). Потом мы разберёмся, что делает каждая строка и пойдём дальше.</p>
+    <p>Введите эти 4 строки:</p>
+
+    <pre><code>
+#!/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print "Hello there, " + name + "!"
+    </code></pre>
+    <p>Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в папке
+        <strong>python_examples</strong> в домашнем каталоге. Этот пример показывает, как просто написать
+программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+этого введите в терминале</p>
+    <p><strong>chmod +x hello.py</strong></p>
+    <p>в папке, в которой вы сохранили программу. Теперь запустите её.
+    </p>
+    <pre>greg@earth:~/python_examples$ ./hello.py
+Hello. I am a python program.
+What is your name? Ferd Burphel
+Hello there, Ferd Burphel!
+greg@earth:~/python_examples$</pre>
+    <p>Вот и всё.</p>
+    <h2 id="for-loop-example">Пример цикла For</h2>
+    <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый редактор и наберите следующую программу:</p>
+
+    <pre><code>
+#!/usr/bin/env python
+for cntr in range(0,10):
+ print cntr
+    </code></pre>
+    <p><i>Не забудьте поставить символ табуляции перед строкой «print cntr».</i>Это важно. В
+Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
+как в других языках программирования, а отступы</p>
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+       <!-- Кнопка перехода на предыдущую страницу -->
+<button type="button" onclick="window.location.href='./button1.html'">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAACXBIWXMAAAsNAAALDQHtB8AsAAAAB3RJTUUH0wkJExMdNO/ZuAAAArVQTFRFAAAAZWVlZWVlZWVlZWVlMmjMMmnRN2W7ZWVlZWVlZWVlZWVlT2KFZWVlMmjMMmnQMmfJZWVlMmnRMmnRNWbAVmJ5OWW2ZWVlOWW3MmjMMmnOMmjLQWOjMmnNMmnROGW4MmjMMmjNN2a+M2bHRmOYOWa5OGW4SWOVQWapRmOZRGWjQmapQ2anPmOpMmjMMmnRMmjLMmnSMmnQMmjKMmbHNGfEMmbHNmbAM2XCMmnSMmfKM2jLMmjMMmnQNGjKMmjLNGfGNGfHMmfJMmbIMmjLMmjKMmnOMmrQMmnOMmjMNGnKMmfLNGnKMmvVMmzXMmrTNGzTQXLNM2zVNWzSPXDPNWvRPXDPNGvTN3PiPnfgPnfhP3fdRnrZRnrcTn7WV4TXSHvaMm/eMm/gNnn1N3r0OHHZOXrxOX78On/9O3/9O4D/PHPYPH/8PIH/PYL/QHXWQIT/QYT9QoT/Q4X9RYf/RoT2Rob8SIj8SIj/SYj8SnrSTYXrTYXsUIv4Uoz1VovvWo/xXY/tXZHyXpLxXpT3Xpf/X5LxYJj/YZDnYZLtYpHpZZv9Zpz/a5fobZjnbZ73cKL8c5nhc5vnc5zodJzodJ3odZ7qdqP3epzbeqXzfKDifabzfqv/gqXmgqbmg6nvhqzviqrli6znjKznja3ojq3lka/okrHtk7PtlLLqmbXqmrXnm7blm7fsnbfnncD/oLvso7vpp77qqsHrrMb2sMXstMnwtsruuMvvuMzuuczvu87wvtDywtP0w9PxxtbxyNfyydfyzNrz0d300t711eD11uH11+H11+L11+L22eP12uT23ur/3+j34Oj34+v45Ov45ez55+355+/+6PD/6e/66/L+7fL87fP97/P67/P78fT78fX78fX98fX+8vX78/f+9vn/+vv++/z+/P3+/v7+////MlzvGAAAAGF0Uk5TAAECAwQFBQYHCw0UFxgaGhwdHyMqKisrMDMzNDU5OTw9PT0+Q01PUVNUW2BiZY+PkpOYmaGhoqqwtrm9v7+/wcrKzNDW2d3d3uXl5ubo7e7u7u/w8PLy9P39/f39/f39/tDAlW4AAAABYktHRObBbFoFAAABkklEQVQYGQXByXISQQCA4b+ne1Z2JhEUSSUaDVGr8gDe9OK7+hYePagHpayYraIMCcOSIQPTzOr3CQDAcmt2lW2SHQAIADjoND2LLIkebwoABeAfDOuv2s/McHqZ9u5uc1BA9/Xp6M2TlkWxXp5/9+R1jgT/5PDj2Z4aB0HTqPX7gcweKwmn7z4cW8XVycj/5RalO1hHy1wyfHs2EkXwYl9Yuijy0hFLvVFmxz0s02jwFFYpQNFzW0q5zSM31b0h1SwooXq43XmNtqp5jZS9YygvAHADhF1Xtq22vZeAfA9AGn0TljQgjkwFAACWLwXCyLJ4fq4BAGD5W8i8VJtkVV7En3yyz3OAPFeRTmXVaHZVMhs40v+7yipDKBnO7mRR8/uuky36dmN0WfM8xyzn07lk7fX3PSePOo5543iOLcPxJJFUWZoeWWb20B1ry1TG1z+LUEvQWjWtuiomiZJGNPk5vd8WEiqtw/W/nm0I4i9XPxb3SYoAMJznrYZjkyXxdhbvchAACFu161KUaaTzXQn8By3KtZMjlOb3AAAAAElFTkSuQmCC" alt="Назад" style="width: 20px; height: 20px; vertical-align: middle;">
+</button>
+<!-- Кнопка перехода к содержанию -->
+<button type="button" onclick="window.location.href='#first'">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAEUklEQVR42o2UbUybVRTHO3X6wfjNRLNo/OC38cU8LWNVwDEM2UxwOnUmmqGjaXldpsJEqtkUgaBMGWwqjEFAxA3Gpm6OlxB5cxmsvMg7MiwwttKHtrS09AVKn/6958JoMKPbSf557nOfe373PPeec2TBTEga2Cok9W8TkvrkQmJvhJDYw9StEBJuPBOmbn40iGtQqJKpgIFbheR+vZAyIpLYJpMM3s5UJNd0RqrV6ocfFPi8kDR4Skgdm4/MuCUdyLfhcLkHpy+bUNZghLZ6Ee8W2BGj/VdSpAw5hQRdU5imJYJt8Egw6HMMWi8cmUZ84RzqrrsxftsF26IXl65ZuOyuFUyLHrT0O3C03ISdH42DRT+q1DTFEnyzSOsjM6al3DobBidduGNegsGyvAp0rmDR7aMxzXHdvONGRbMFez676RcSdeM71Y3hDP7Q/8D9xcKRSXxVY8OA3omxGTeJgyx2LyS/n2vBuUJza99dGJl2obTBgvC0fyBoOn9i4CeYtqxBe5Xy1BHboZNGNPctoGvMgRtMBJgxLWHF58ddkyQ/TDZ+NLSO668hO9LLRISmDi6wqPcx8GMylkJbmQpeztBLp67Mo7HHiqYeG3fUz3oC0IBR5OtHRGvrdVaU1hvYhY5LioRrlfvic54i8Dam1tgcC6qa51DbbuYOw1NO+Fh0wWzK6EHR7yLiTnvwev4SlFo7WI73RKmqQgksZ7mpP1Q0jzNXjShvFNE3scgjvZ/Rxq3DXrx9EnjpC0B5zAfGM0Rpat4kcAQlfsqPIr6pNeCPLiuWvRIe1Ja8flR2rIJfPC5BSB6y7tbUfLAOPlgwj7RSI76uNeF8uw1XdQ54lgNR25wSpuYkTIiAxwtuZ1qAzPNAfAkQ/iWDr4GjNefiZVT7VKYx2W7sP+HC/vxVJZd6sOAKgMvauDPX8G1wS60IzEVksedxHzvj7tlX1FXvyaihUO2HaZ2IzpHWFfeDxMAIgFs3B+/KBnYz7ch0QdB09ceoiqNl1KWooYSlzUh78nzYuyZVie++Eaf/7ENMrg/kRyLGDk1b7YH4zO0yMupSitQha2yOGXFFdrzPlF7hwKzVB4db4udb3eHBwUIH18D0Cp/PvuCktdyHfENTBhyRqho1s6c5mFofq/WSXUdHcbjYiPSzIj4pF5FbY0ZerRmZlSJVFs1zZZ0zIe+CGZ9W8HfuQ75ydcdvjBXC9LjsroVq2rbLE7v/fO3YqPR5xQyyqmc36pcN4/V3Wks+ioROXYyq5C0GfXJDI6IXpbo+RJGoa31VO4i0kls4UWfEtxfFe4q+0Rpaq0i4rtur+v4Nxnj2nq2TjkSpbniBdanKiA//Xngne0zSnp3AdxcNKPxVJPExzdE3tsZBv0+REpQ3n82MIqfWR12KGgrVviJJZ4j6uNdKYuNZSim6/bWLCqHf3xBpEPgW2p26FDUUqn0qU6ooSn7KU0opun26qMCZBuw/G0GAr3mHnKsAAAAASUVORK5CYII=" alt="К содержанию" style="width: 20px; height: 20px; vertical-align: middle;">
+</button>
+<!-- Кнопка перехода на следующую страницу -->
+<button type="button" onclick="window.location.href='./button2.html'">
+  <img src="https://ds-blobs-3.cdn.devapps.ru/434318.png" alt="Вперед" style="width: 20px; height: 20px; vertical-align: middle;">
+</button>
+    </div>
+
+
+</body>
+</html>
