@@ -1,11 +1,11 @@
-# define the correct answers
+# определяем правильные ответы
 correct_answers = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
 
-# read student's answers from file
+# читаем ответы студентов из файла
 with open('student_solution.txt') as f:
     student_answers = [line.strip() for line in f]
 
-# compare answers and count correct and incorrect answers
+# сравниваем ответы и оределяем правильные или неправильные ответы
 correct_count = 0
 incorrect_count = 0
 incorrect_questions = []
@@ -16,10 +16,10 @@ for i, (correct, student) in enumerate(zip(correct_answers, student_answers)):
         incorrect_count += 1
         incorrect_questions.append(i+1)
 
-# check if student passed the test
+# проверяем прошел ли студент тест
 passed = correct_count >= 15
 
-# output result
+# распичатаем результат
 if passed:
     print("The student passed the test.")
 else:
